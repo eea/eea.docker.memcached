@@ -6,6 +6,17 @@ These images are generic, thus you can obviously re-use them within
 your non-related EEA projects.
 
 
+### Supported tags and respective Dockerfile links
+
+  - `:latest` (default)
+  - `:1.4`
+
+
+### Base docker image
+
+ - [hub.docker.com](https://registry.hub.docker.com/u/eeacms/memcached)
+
+
 ### Source code
 
   - [github.com](http://github.com/eea/eea.docker.memcached
@@ -28,6 +39,29 @@ your non-related EEA projects.
 ## Supported environment variables ##
 
 ### memcached.env ###
+
+* `MEMCACHED_MEMORY`
+* `MEMCACHED_TCP_PORT`
+* `MEMCACHED_THREADS`
+* `MEMCACHED_CONNECTIONS`
+* `MEMCACHED_FACTOR`
+* `MEMCACHED_DAEMON`
+* `MEMCACHED_UDP_PORT`
+* `MEMCACHED_SOCKET_MASK`
+* `MEMCACHED_INTERFACE`
+* `MEMCACHED_MEMORY_EXHAUSTED`
+* `MEMCACHED_LOCK_PAGED_MEMORY`
+* `MEMCACHED_VERBOSE`
+* `MEMCACHED_PID_FILE`
+* `MEMCACHED_KEY_VALUE_FLAGS_SPACE`
+* `MEMCACHED_LARGE_MEMORY_PAGES`
+* `MEMCACHED_DELIMITER`
+* `MEMCACHED_MAX_REQUESTS_PER_EVENT`
+* `MEMCACHED_DISABLE_CAS`
+* `MEMCACHED_BACKLOG_QUEUE_LIMIT`
+* `MEMCACHED_BIND_PROTOCOL`
+* `MEMCACHED_SLAB_PAGE_SIZE`
+* `MEMCACHED_SASL`
 
 
 ## Copyright and license
