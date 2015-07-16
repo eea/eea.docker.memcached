@@ -1,4 +1,4 @@
-FROM memcached:1.4
+FROM memcached:latest
 
 ADD run.sh /bin/run.sh
 CMD /bin/run.sh
