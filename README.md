@@ -2,7 +2,7 @@
 
 Docker images for memcached.
 
-These images are generic, thus you can obviously re-use them within
+This image is generic, thus you can obviously re-use it within
 your non-related EEA projects.
 
 
@@ -34,6 +34,12 @@ your non-related EEA projects.
 
     $ git clone https://github.com/eea/eea.docker.memcached.git
     $ cd eea.docker.memcached
+    $ docker-compose up -d
+    $ docker-compose logs
+
+or (without docker-compose)
+
+    $ docker run -d -e MEMCACHED_MEMORY=2048 eeacms/memcached
 
 
 ## Supported environment variables ##
