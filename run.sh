@@ -108,10 +108,5 @@ if [ ! -z "$MEMCACHED_DAEMON" ]; then
   PARAMS="$PARAMS -d"
 fi
 
-# run as a demon
-if [ ! -z "$MEMCACHED_SASL" ]; then
-  PARAMS="$PARAMS -S"
-fi
-
 /usr/local/bin/memcached $PARAMS
 
