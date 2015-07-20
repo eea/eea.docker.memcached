@@ -40,28 +40,27 @@ your non-related EEA projects.
 
 ### memcached.env ###
 
-* `MEMCACHED_MEMORY`
-* `MEMCACHED_TCP_PORT`
-* `MEMCACHED_THREADS`
-* `MEMCACHED_CONNECTIONS`
-* `MEMCACHED_FACTOR`
-* `MEMCACHED_DAEMON`
-* `MEMCACHED_UDP_PORT`
-* `MEMCACHED_SOCKET_MASK`
-* `MEMCACHED_INTERFACE`
-* `MEMCACHED_MEMORY_EXHAUSTED`
-* `MEMCACHED_LOCK_PAGED_MEMORY`
-* `MEMCACHED_VERBOSE`
-* `MEMCACHED_PID_FILE`
-* `MEMCACHED_KEY_VALUE_FLAGS_SPACE`
-* `MEMCACHED_LARGE_MEMORY_PAGES`
-* `MEMCACHED_DELIMITER`
-* `MEMCACHED_MAX_REQUESTS_PER_EVENT`
-* `MEMCACHED_DISABLE_CAS`
-* `MEMCACHED_BACKLOG_QUEUE_LIMIT`
-* `MEMCACHED_BIND_PROTOCOL`
-* `MEMCACHED_SLAB_PAGE_SIZE`
-* `MEMCACHED_SASL`
+* `MEMCACHED_MEMORY` Max memory to use for items in megabytes (default: 64 MB)
+* `MEMCACHED_TCP_PORT` TCP port number to listen on (default: 11211)
+* `MEMCACHED_THREADS` Number of threads to use (default: 4)
+* `MEMCACHED_CONNECTIONS` Max simultaneous connections (default: 1024)
+* `MEMCACHED_FACTOR` Chunk size growth factor (default: 1.25)
+* `MEMCACHED_DAEMON` Run as a demon
+* `MEMCACHED_UDP_PORT` UDP port number to listen on (default: 0)
+* `MEMCACHED_SOCKET_MASK` Access mask for UNIX socket, in octal (default: 0700)
+* `MEMCACHED_INTERFACE` Interface to listen on (default: INADDR_ANY, all addresses)
+* `MEMCACHED_MEMORY_EXHAUSTED` Return error on memory exhausted (rather than removing items)
+* `MEMCACHED_LOCK_PAGED_MEMORY` Lock down all paged memory
+* `MEMCACHED_VERBOSE` Verbose (print errors/warnings while in event loop)
+* `MEMCACHED_PID_FILE` Save PID in <file>, only used with -d option
+* `MEMCACHED_KEY_VALUE_FLAGS_SPACE` Minimum space allocated for key+value+flags (default: 48)
+* `MEMCACHED_LARGE_MEMORY_PAGES` Try to use large memory pages (if available)
+* `MEMCACHED_DELIMITER` The delimiter between key prefixes and IDs.
+* `MEMCACHED_MAX_REQUESTS_PER_EVENT` Maximum number of requests per event
+* `MEMCACHED_DISABLE_CAS` Disable use of CAS
+* `MEMCACHED_BACKLOG_QUEUE_LIMIT` Set the backlog queue limit (default: 1024)
+* `MEMCACHED_BIND_PROTOCOL` Binding protocol - one of ascii, binary, or auto (default)
+* `MEMCACHED_SLAB_PAGE_SIZE` Override the size of each slab page. Adjusts max item size (default: 1mb, min: 1k, max: 128m)
 
 
 ## Copyright and license
