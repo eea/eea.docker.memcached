@@ -44,8 +44,6 @@ or (without docker-compose)
 
 ## Supported environment variables ##
 
-### memcached.env ###
-
 * `MEMCACHED_MEMORY` Max memory to use for items in megabytes (default: 64 MB)
 * `MEMCACHED_TCP_PORT` TCP port number to listen on (default: 11211)
 * `MEMCACHED_THREADS` Number of threads to use (default: 4)
