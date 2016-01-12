@@ -3,5 +3,9 @@ memcached:
   build: .
   ports:
     - "11211:11211"
-  env_file:
-    - memcached.env
+  environment:
+    - MEMCACHED_MEMORY=2048
+    - MEMCACHED_TCP_PORT=11211
+    - MEMCACHED_THREADS=4
+    - MEMCACHED_CONNECTIONS=1024
+    - MEMCACHED_FACTOR=1.25
