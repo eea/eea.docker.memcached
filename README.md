@@ -11,6 +11,9 @@ your non-related EEA projects.
   - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/master/Dockerfile) (default)
   - `:1.4` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/1.4/Dockerfile)
 
+### Changes
+
+ - [CHANGELOG.md](https://github.com/eea/eea.docker.memcached/blob/master/CHANGELOG.md)
 
 ### Base docker image
 
