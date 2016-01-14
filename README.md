@@ -8,8 +8,8 @@ your non-related EEA projects.
 
 ### Supported tags and respective Dockerfile links
 
-  - `:latest` (default)
-  - `:1.4`
+  - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/master/Dockerfile) (default)
+  - `:1.4` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/1.4/Dockerfile)
 
 
 ### Base docker image
@@ -43,8 +43,6 @@ or (without docker-compose)
 
 
 ## Supported environment variables ##
-
-### memcached.env ###
 
 * `MEMCACHED_MEMORY` Max memory to use for items in megabytes (default: 64 MB)
 * `MEMCACHED_TCP_PORT` TCP port number to listen on (default: 11211)

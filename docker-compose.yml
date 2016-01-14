@@ -2,6 +2,10 @@ memcached:
   image: eeacms/memcached
   restart: always
   ports:
-    - "11211:11211"
-  env_file:
-    - memcached.env
+  - "11211:11211"
+  environment:
+  - MEMCACHED_MEMORY=2048
+  - MEMCACHED_TCP_PORT=11211
+  - MEMCACHED_THREADS=4
+  - MEMCACHED_CONNECTIONS=1024
+  - MEMCACHED_FACTOR=1.25
