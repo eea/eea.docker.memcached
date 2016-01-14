@@ -1,14 +1,17 @@
-FROM memcached:latest
+FROM memcached:1.4
 
 # Install Chaperone
 USER root
-RUN apt-get update -q && \
-    apt-get install python3-pip --no-install-recommends -y && \
-    pip3 install chaperone && apt-get clean && rm -rf /tmp/* /var/tmp/*
+RUN \
+  apt-get update && \
+  apt-get install -y --no-install-recommends python3-pip && \
+  pip3 install chaperone && \
+  rm -rf /var/lib/apt/lists/* && \
+  apt-get clean && \
+  rm -rf /tmp/* /var/tmp/*
 
 # Chaperone setup
 COPY chaperone.conf /etc/chaperone.d/chaperone.conf
-RUN usermod -u 500 memcache && groupmod -g 500 memcache
 
 USER memcache
 ENTRYPOINT ["/usr/local/bin/chaperone"]

@@ -8,8 +8,8 @@ your non-related EEA projects.
 
 ### Supported tags and respective Dockerfile links
 
-  - `:latest` (default)
-  - `:1.4`
+  - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/master/Dockerfile) (default)
+  - `:1.4` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/1.4/Dockerfile)
 
 
 ### Base docker image
