@@ -3,6 +3,8 @@ memcached:
   restart: always
   ports:
   - "11211:11211"
+  volumes:
+  - /etc/localtime:/etc/localtime:ro
   environment:
   - MEMCACHED_MEMORY=2048
   - MEMCACHED_TCP_PORT=11211
