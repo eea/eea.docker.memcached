@@ -8,8 +8,11 @@ your non-related EEA projects.
 
 ### Supported tags and respective Dockerfile links
 
-  - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/master/Dockerfile) (default)
-  - `:1.4-1.0` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/tree/1.4-1.0/Dockerfile)
+  - `:latest` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/blob/master/Dockerfile) - Debian: **Jessie**, Memcached: **1.4**
+ 
+### Stable and immutable tags
+
+  - `:1.4-1.0` [*Dockerfile*](https://github.com/eea/eea.docker.memcached/tree/1.4-1.0/Dockerfile) - Memcached: **1.4** Release: **1.0**
 
 ### Changes
 
@@ -17,13 +20,12 @@ your non-related EEA projects.
 
 ### Base docker image
 
- - [hub.docker.com](https://registry.hub.docker.com/u/eeacms/memcached)
+ - [hub.docker.com](https://hub.docker.com/r/eeacms/memcached)
 
 
 ### Source code
 
-  - [github.com](http://github.com/eea/eea.docker.memcached
-)
+  - [github.com](http://github.com/eea/eea.docker.memcached)
 
 
 ### Installation
