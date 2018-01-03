@@ -1,10 +1,13 @@
 ## Memcached Docker image
 
+### WARNING
+
+**Notice:** This image is **DEPRECATED**. Please use [the official memcached](https://hub.docker.com/_/memcached/) image.
+
 Docker images for memcached.
 
 This image is generic, thus you can obviously re-use it within
 your non-related EEA projects.
-
 
 ### Supported tags and respective Dockerfile links
 
